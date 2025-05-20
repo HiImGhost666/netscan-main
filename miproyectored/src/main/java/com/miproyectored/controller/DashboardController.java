@@ -55,6 +55,7 @@ public class DashboardController {
     private TableView<InventoryManager.DevicePort> devicePortsTable;
     private NetworkReport currentReport;
 
+
     @FXML
     public void initialize() {
         // Inicializar comboBox de redes

@@ -37,6 +37,7 @@
             <Image url="@../images/gato.jpg"/>
         </ImageView>
         <Label text="Ultra Mega Pro NetScanner V8 2025 Edition" styleClass="header-title"/>
+
     </HBox>
 
     <Separator/>
