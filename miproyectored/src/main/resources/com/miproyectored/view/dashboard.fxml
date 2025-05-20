@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.miproyectored.controller.DashboardController"
+      spacing="20" styleClass="root" stylesheets="@../css/styles.css">
+
+    <padding>
+        <Insets top="20" right="25" bottom="20" left="25"/>
+    </padding>
+
+    <!-- Header -->
+    <HBox spacing="12" alignment="CENTER_LEFT">
+        <ImageView fitHeight="128" fitWidth="128">
+            <Image url="@../images/gato.jpg"/>
+        </ImageView>
+        <Label text="Ultra Mega Pro NetScanner V8 2025 Edition" styleClass="header-title"/>
+    </HBox>
+
+    <Separator/>
+
+    <!-- Control Panel -->
+    <TitledPane text="Control de Escaneo" expanded="true" collapsible="false" styleClass="titled-pane">
+        <VBox spacing="12" styleClass="control-panel">
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Red de destino:" styleClass="control-label"/>
+                <ComboBox fx:id="networkComboBox" prefWidth="280" styleClass="combo-box"/>
+            </HBox>
+            <HBox spacing="12" alignment="CENTER_LEFT">
+                <Button text="Iniciar escaneo" fx:id="scanButton" styleClass="primary-button" onAction="#handleScan"/>
+                <MenuButton text="Exportar" fx:id="exportMenuButton" styleClass="secondary-button">
+                    <items>
+                        <MenuItem text="Exportar a JSON" onAction="#handleExportJson"/>
+                        <MenuItem text="Exportar a CSV" onAction="#handleExportCsv"/>
+                        <MenuItem text="Exportar a HTML" onAction="#handleExportHtml"/>
+                    </items>
+                </MenuButton>
+                <ProgressBar fx:id="progressBar" visible="false" styleClass="progress-bar"/>
+            </HBox>
+            <Label fx:id="statusLabel" styleClass="status-label"/>
+        </VBox>
+    </TitledPane>
+
+    <!-- Database View -->
+    <TabPane fx:id="databaseTabPane" styleClass="database-tab-pane">
+        <Tab text="Scan Reports" fx:id="scanReportsTab">
+            <TableView fx:id="scanReportsTable">
+                <columns>
+                    <TableColumn text="ID"/>
+                    <TableColumn text="Target"/>
+                    <TableColumn text="Date"/>
+                    <TableColumn text="Engine Info"/>
+                </columns>
+            </TableView>
+        </Tab>
+        <Tab text="Devices" fx:id="devicesTab">
+            <TableView fx:id="devicesTable">
+                <columns>
+                    <TableColumn text="IP"/>
+                    <TableColumn text="Hostname"/>
+                    <TableColumn text="MAC"/>
+                    <TableColumn text="Manufacturer"/>
+                    <TableColumn text="OS"/>
+                    <TableColumn text="Risk Level"/>
+                </columns>
+            </TableView>
+        </Tab>
+        <Tab text="Device Ports" fx:id="devicePortsTab">
+            <TableView fx:id="devicePortsTable">
+                <columns>
+                    <TableColumn text="Port ID"/>
+                    <TableColumn text="Device ID"/>
+                    <TableColumn text="Port"/>
+                    <TableColumn text="Service"/>
+                    <TableColumn text="Protocol"/>
+                </columns>
+            </TableView>
+        </Tab>
+    </TabPane>
+
+    <!-- Output Section -->
+    <TitledPane text="Resumen del escaneo" expanded="true" collapsible="false" styleClass="titled-pane">
+        <TextArea fx:id="outputArea" editable="false" wrapText="true" prefHeight="180" styleClass="output-area"/>
+    </TitledPane>
+
+</VBox>

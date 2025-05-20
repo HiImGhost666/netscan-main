@@ -1,0 +1,127 @@
+{
+  "scanTimestamp" : 1747774870971,
+  "scannedNetworkTarget" : "192.168.1.0/24",
+  "devices" : [ {
+    "ip" : "192.168.1.1",
+    "hostname" : "192.168.1.1",
+    "openPorts" : [ 22, 80, 443 ],
+    "services" : {
+      "80" : "http (micro_httpd)",
+      "22" : "ssh (Dropbear sshd 2019.78 protocol 2.0)",
+      "443" : "http (micro_httpd)"
+    },
+    "mac" : "98:97:D1:33:2C:27",
+    "manufacturer" : "MitraStar Technology",
+    "os" : "Linux 2.6.32 - 3.10 (Accuracy: 100%)",
+    "riskLevel" : null
+  }, {
+    "ip" : "192.168.1.37",
+    "hostname" : "192.168.1.37",
+    "openPorts" : [ 5555, 8009 ],
+    "services" : {
+      "5555" : "adb (Android Debug Bridge token auth required)",
+      "8009" : "tcpwrapped"
+    },
+    "mac" : "90:39:5F:E4:D8:B8",
+    "manufacturer" : "Amazon Technologies",
+    "os" : "Linux 5.4 (Accuracy: 97%)",
+    "riskLevel" : null
+  }, {
+    "ip" : "192.168.1.39",
+    "hostname" : "192.168.1.39",
+    "openPorts" : [ ],
+    "services" : { },
+    "mac" : "26:96:82:AE:20:66",
+    "manufacturer" : null,
+    "os" : null,
+    "riskLevel" : null
+  }, {
+    "ip" : "192.168.1.40",
+    "hostname" : "192.168.1.40",
+    "openPorts" : [ 22, 80, 443, 3517 ],
+    "services" : {
+      "80" : "rtsp",
+      "22" : "ssh (Dropbear sshd 2022.83 protocol 2.0)",
+      "443" : "https (mini_httpd)",
+      "3517" : "802-11-iapp"
+    },
+    "mac" : "26:96:82:AE:20:66",
+    "manufacturer" : null,
+    "os" : "Linux 4.15 - 5.19 (Accuracy: 100%)",
+    "riskLevel" : null
+  }, {
+    "ip" : "192.168.1.45",
+    "hostname" : "192.168.1.45",
+    "openPorts" : [ ],
+    "services" : { },
+    "mac" : "26:96:82:AE:20:66",
+    "manufacturer" : null,
+    "os" : null,
+    "riskLevel" : null
+  }, {
+    "ip" : "192.168.1.47",
+    "hostname" : "192.168.1.47",
+    "openPorts" : [ ],
+    "services" : { },
+    "mac" : "A0:D7:F3:6B:DA:E0",
+    "manufacturer" : "Samsung Electronics",
+    "os" : null,
+    "riskLevel" : null
+  }, {
+    "ip" : "192.168.1.59",
+    "hostname" : "192.168.1.59",
+    "openPorts" : [ 1080, 5555, 8009, 8888 ],
+    "services" : {
+      "5555" : "adb (Android Debug Bridge token auth required)",
+      "1080" : "socks5 No authentication; connection failed",
+      "8888" : "tcpwrapped",
+      "8009" : "tcpwrapped"
+    },
+    "mac" : "F0:F0:A4:53:D4:B4",
+    "manufacturer" : "Amazon Technologies",
+    "os" : "Android 9 - 10 (Linux 4.9 - 4.14) (Accuracy: 100%)",
+    "riskLevel" : null
+  }, {
+    "ip" : "192.168.1.60",
+    "hostname" : "192.168.1.60",
+    "openPorts" : [ 8009 ],
+    "services" : {
+      "8009" : "tcpwrapped"
+    },
+    "mac" : "26:96:82:AE:20:66",
+    "manufacturer" : null,
+    "os" : "Android 10 - 11 (Linux 4.14) (Accuracy: 100%)",
+    "riskLevel" : null
+  }, {
+    "ip" : "192.168.1.78",
+    "hostname" : "192.168.1.78",
+    "openPorts" : [ 7676, 8080 ],
+    "services" : {
+      "8080" : "http (lighttpd)",
+      "7676" : "upnp (AllShare UPnP)"
+    },
+    "mac" : "26:96:82:AE:20:66",
+    "manufacturer" : null,
+    "os" : "Linux 2.6.32 - 3.10 (Accuracy: 100%)",
+    "riskLevel" : null
+  }, {
+    "ip" : "192.168.1.33",
+    "hostname" : "192.168.1.33",
+    "openPorts" : [ 135, 139, 445, 902, 912, 5357, 5432 ],
+    "services" : {
+      "912" : "vmware-auth (VMware Authentication Daemon 1.0 Uses VNC, SOAP)",
+      "902" : "vmware-auth (VMware Authentication Daemon 1.10 Uses VNC, SOAP)",
+      "135" : "msrpc (Microsoft Windows RPC)",
+      "5432" : "postgresql (PostgreSQL DB Spanish)",
+      "139" : "netbios-ssn (Microsoft Windows netbios-ssn)",
+      "445" : "microsoft-ds",
+      "5357" : "http (Microsoft HTTPAPI httpd 2.0 SSDP/UPnP)"
+    },
+    "mac" : null,
+    "manufacturer" : null,
+    "os" : "Microsoft Windows 10 1607 - 11 23H2 (Accuracy: 100%)",
+    "riskLevel" : null
+  } ],
+  "scanEngineInfo" : null,
+  "deviceCount" : 10
+}

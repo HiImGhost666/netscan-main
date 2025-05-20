@@ -1,0 +1,16 @@
+Reporte de Escaneo de Red
+Objetivo del Escaneo:,192.168.1.0/24
+Fecha del Escaneo:,2025-05-20 22:01:10 WEST
+Dispositivos Encontrados:,10
+
+IP,Hostname,MAC,Fabricante,OS,Puertos Abiertos,Servicios,Nivel de Riesgo
+"192.168.1.1","192.168.1.1","98:97:D1:33:2C:27","MitraStar Technology","Linux 2.6.32 - 3.10 (Accuracy: 100%)","22; 80; 443","80:http (micro_httpd) | 22:ssh (Dropbear sshd 2019.78 protocol 2.0) | 443:http (micro_httpd)","N/A"
+"192.168.1.37","192.168.1.37","90:39:5F:E4:D8:B8","Amazon Technologies","Linux 5.4 (Accuracy: 97%)","5555; 8009","5555:adb (Android Debug Bridge token auth required) | 8009:tcpwrapped","N/A"
+"192.168.1.39","192.168.1.39","26:96:82:AE:20:66","N/A","N/A","N/A","N/A","N/A"
+"192.168.1.40","192.168.1.40","26:96:82:AE:20:66","N/A","Linux 4.15 - 5.19 (Accuracy: 100%)","22; 80; 443; 3517","80:rtsp | 22:ssh (Dropbear sshd 2022.83 protocol 2.0) | 443:https (mini_httpd) | 3517:802-11-iapp","N/A"
+"192.168.1.45","192.168.1.45","26:96:82:AE:20:66","N/A","N/A","N/A","N/A","N/A"
+"192.168.1.47","192.168.1.47","A0:D7:F3:6B:DA:E0","Samsung Electronics","N/A","N/A","N/A","N/A"
+"192.168.1.59","192.168.1.59","F0:F0:A4:53:D4:B4","Amazon Technologies","Android 9 - 10 (Linux 4.9 - 4.14) (Accuracy: 100%)","1080; 5555; 8009; 8888","5555:adb (Android Debug Bridge token auth required) | 1080:socks5 No authentication; connection failed | 8888:tcpwrapped | 8009:tcpwrapped","N/A"
+"192.168.1.60","192.168.1.60","26:96:82:AE:20:66","N/A","Android 10 - 11 (Linux 4.14) (Accuracy: 100%)","8009","8009:tcpwrapped","N/A"
+"192.168.1.78","192.168.1.78","26:96:82:AE:20:66","N/A","Linux 2.6.32 - 3.10 (Accuracy: 100%)","7676; 8080","8080:http (lighttpd) | 7676:upnp (AllShare UPnP)","N/A"
+"192.168.1.33","192.168.1.33","N/A","N/A","Microsoft Windows 10 1607 - 11 23H2 (Accuracy: 100%)","135; 139; 445; 902; 912; 5357; 5432","912:vmware-auth (VMware Authentication Daemon 1.0 Uses VNC; SOAP) | 902:vmware-auth (VMware Authentication Daemon 1.10 Uses VNC; SOAP) | 135:msrpc (Microsoft Windows RPC) | 5432:postgresql (PostgreSQL DB Spanish) | 139:netbios-ssn (Microsoft Windows netbios-ssn) | 445:microsoft-ds | 5357:http (Microsoft HTTPAPI httpd 2.0 SSDP/UPnP)","N/A"
