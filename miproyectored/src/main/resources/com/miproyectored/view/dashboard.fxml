@@ -36,7 +36,7 @@
         <ImageView fitHeight="128" fitWidth="128">
             <Image url="@../images/gato.jpg"/>
         </ImageView>
-        <Label text="Ultra Mega Pro NetScanner V8 2025 Edition" styleClass="header-title"/>
+        <Label text="Ultra Mega Pro NetScan 2025 Edition" styleClass="header-title"/>
 
     </HBox>
 
